@@ -7,7 +7,9 @@ class MovieOverview extends React.Component {
         super();
         this.state = {
             isLoaded: false,
-            movies: []
+            movieLoaded: false,
+            movies: [],
+            movie: null
         }
     }
 
@@ -23,8 +25,7 @@ class MovieOverview extends React.Component {
     }
 
     render() {
-        const {isLoaded, movies} = this.state;
-        console.log(movies);
+        const {isLoaded, movies, movie} = this.state;
         if (!isLoaded) {
             return (<div>loading...</div>);
         } else {

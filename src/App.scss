@@ -7,6 +7,7 @@ html, body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-color: #0E0E0E;
 }
 
@@ -44,20 +45,20 @@ html, body {
     bottom: 70px;
     width: 100%;
   }
+}
 
-  .button {
-    background: #FF2345;
-    border-radius: 28px;
-    width: 40%;
+.button {
+  background: #FF2345;
+  border-radius: 28px;
+  width: 40%;
 
-    .button-information {
-      font-family: GalanoGrotesque-Bold;
-      font-size: 16px;
-      color: #FFFFFF;
-      letter-spacing: 0;
-      line-height: 20px;
-      padding: 20px;
-    }
+  .button-information {
+    font-family: GalanoGrotesque-Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 20px;
+    padding: 20px;
   }
 }
 
@@ -82,6 +83,56 @@ html, body {
   img {
     width: 28px;
     height: 28px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  position: relative;
+
+  .gradient {
+    background-image: radial-gradient(50% 100%, rgba(14,14,14,0.00) 0%, #0E0E0E 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  }
+
+  .header-information {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 40%;
+    left: 5%;
+
+    h2 {
+      font-family: GalanoGrotesque-Bold;
+      font-size: 60px;
+      letter-spacing: 0;
+    }
+
+    p{
+      width: 40%;
+      font-family: Newzald-Bold;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    .button {
+      display: flex;
+      width: 15%;
+      height: 30px;
+      align-items: center;
+    }
   }
 }
 
