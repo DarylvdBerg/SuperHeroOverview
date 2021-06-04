@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../image/DotControl logo_.png";
+import imbdLogo from "../image/193-1934529_all-white-imdb-logo-png.png";
 
 class MovieHeader extends React.Component {
     constructor() {
@@ -33,7 +34,7 @@ class MovieHeader extends React.Component {
                         <p>{movie.Plot}</p>
 
                         <div className="button">
-                            <span className="button-information">More information</span>
+                            <span className="button-information">More information</span><img src={imbdLogo} alt="imbdLogo"/>
                         </div>
                     </div>
                 </div>

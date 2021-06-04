@@ -44,6 +44,39 @@ html, body {
     left: 25px;
     bottom: 70px;
     width: 100%;
+
+    p {
+      font-family: Newzald-Bold;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .rating {
+      font-size: 15px;
+      margin-top: 20px;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        font-family: GalanoGrotesque-Bold;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-left: 15px;
+      }
+    }
+
+    .heart-red {
+      color: red;
+    }
+
+    .heart-grey {
+      color: grey;
+    }
   }
 }
 
@@ -132,6 +165,32 @@ html, body {
       width: 15%;
       height: 30px;
       align-items: center;
+
+      img {
+        position: static;
+        width: 24px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .header {
+    .header-information{
+      .button {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .header{
+    .header-information{
+      .button{
+        width: 25%;
+      }
     }
   }
 }
@@ -139,5 +198,68 @@ html, body {
 @media only screen and (max-width: 1000px){
   .loadMore {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 875px){
+  .header{
+    .header-information{
+      p {
+        width: 100%;
+      }
+
+      .button{
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 725px){
+  .header{
+    .header-information{
+      .button{
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .header{
+    .header-information{
+      bottom: 45%;
+      .button{
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .header{
+    .header-information{
+      bottom: 20%;
+
+      .button{
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .header{
+    .header-information{
+      bottom: 20%;
+
+      h2 {
+        font-size: 55px;
+      }
+
+      .button{
+        width: 80%;
+      }
+    }
   }
 }

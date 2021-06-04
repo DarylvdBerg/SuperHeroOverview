@@ -16,8 +16,14 @@ class MovieCard extends React.Component{
                   <div className="gradient"></div>
                   <div className="movie-information">
                       <h3>{movie.Title}</h3>
+                      <p>Action, Advanture, Sci-Fi</p>
                       <div className="button">
                           <span className="button-information">Details</span>
+                      </div>
+                      <div className="rating">
+                          <span className="heart-red">&#10084; &#10084; &#10084;</span>
+                          <span className="heart-grey">&#10084; &#10084; </span>
+                          <p>5.9 / 10</p>
                       </div>
                   </div>
               </div>
